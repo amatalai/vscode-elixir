@@ -1,0 +1,3 @@
+[submodule "vscode-elixir-ls"]
+	path = vscode-elixir-ls
+	url = https://github.com/elixir-lsp/vscode-elixir-ls.git

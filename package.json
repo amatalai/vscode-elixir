@@ -1,0 +1,79 @@
+{
+  "name": "vscode-elixir",
+  "displayName": "Elixir Syntax & Formatting",
+  "description": "Other extensions annoyed me so I \"made\" my own",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amatalai/vscode-elixir.git"
+  },
+  "icon": "vscode-elixir-ls/images/logo.png",
+  "publisher": "amatalai",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Formatters"
+  ],
+  "main": "./extension.js",
+  "devDependencies": {
+    "@types/node": "^12.11.7",
+    "@types/vscode": "^1.40.0"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "elixir",
+        "aliases": [
+          "Elixir"
+        ],
+        "extensions": [
+          ".ex",
+          ".exs"
+        ],
+        "filenames": [
+          "mix.lock"
+        ],
+        "configuration": "./vscode-elixir-ls/elixir-language-configuration.json"
+      },
+      {
+        "id": "eex",
+        "aliases": [
+          "Embedded Elixir"
+        ],
+        "extensions": [
+          ".eex"
+        ],
+        "configuration": "./vscode-elixir-ls/eex-language-configuration.json"
+      },
+      {
+        "id": "html-eex",
+        "aliases": [
+          "HTML (Embedded Elixir)"
+        ],
+        "extensions": [
+          ".html.eex"
+        ],
+        "configuration": "./vscode-elixir-ls/eex-language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "elixir",
+        "scopeName": "source.elixir",
+        "path": "./vscode-elixir-ls/syntaxes/elixir.json"
+      },
+      {
+        "language": "eex",
+        "scopeName": "text.elixir",
+        "path": "./vscode-elixir-ls/syntaxes/eex.json"
+      },
+      {
+        "language": "html-eex",
+        "scopeName": "text.html.elixir",
+        "path": "./vscode-elixir-ls/syntaxes/html-eex.json"
+      }
+    ]
+  }
+}
