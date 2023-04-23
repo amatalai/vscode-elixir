@@ -22,6 +22,24 @@
     "@types/vscode": "^1.40.0"
   },
   "contributes": {
+    "configurationDefaults": {
+      "[elixir]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.wordBasedSuggestions": false,
+        "editor.formatOnType": true,
+        "editor.trimAutoWhitespace": false,
+        "files.trimTrailingWhitespace": true,
+        "files.insertFinalNewline": true,
+        "files.trimFinalNewlines": true
+      },
+      "[html-eex]": {
+        "editor.trimAutoWhitespace": false,
+        "files.trimTrailingWhitespace": true,
+        "files.insertFinalNewline": true,
+        "files.trimFinalNewlines": true
+      }
+    },
     "languages": [
       {
         "id": "elixir",
